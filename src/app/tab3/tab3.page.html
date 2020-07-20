@@ -1,0 +1,12 @@
+
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeLg="4" sizeMd="4" sizeXs="6" *ngFor="let image of images">
+        <div class="img-wrapper" routerLink="/home/homescreen" [style.background-image]="'url(assets/img/' + image.img + '.jpg)'">
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

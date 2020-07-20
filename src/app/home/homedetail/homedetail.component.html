@@ -1,0 +1,82 @@
+
+
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <img src="/assets/DSC_0328.JPG" alt="" />
+      <ion-card-header>
+        <ion-card-title>Welcome to my new App</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Click on the three tabs below to navigate between pages.</p>
+      </ion-card-content>
+    </ion-card>
+    
+      <ion-card class="welcome-card">
+        <img [src]="currentImage" *ngIf="currentImage">
+      </ion-card>
+   
+      <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+        <ion-fab-button (click)="takePicture()">
+          <ion-icon name="camera"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+
+        <ion-grid class="ion-padding-start">
+          <ion-row class="ion-justify-content-around ">
+            <ion-col size-sm="3" size-lg="3" size-xl="4" *ngFor="let item of items">
+              <ion-item lines="none"  >
+                <ion-thumbnail expand="block" >
+                  <ion-img [src]="item.src"></ion-img>
+                </ion-thumbnail>
+              </ion-item>
+              <!-- <ion-button expand="block" fill="clear" [disabled]="wifiDisable">
+                <ion-icon slot="icon-only" name="wifi"></ion-icon>
+              </ion-button> -->
+            </ion-col>
+            <!-- <ion-col>
+              <ion-button expand="block" fill="clear" [disabled]="locateDisable">
+                <ion-icon slot="icon-only" name="locate"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button expand="block" fill="clear" [disabled]="internetDisable">
+                <ion-icon slot="icon-only" name="planet"></ion-icon>
+              </ion-button>
+            </ion-col> -->
+          </ion-row>
+    
+        </ion-grid>
+   
+      
+
+
+      <!-- <ion-grid>
+        <ion-row class="ion-justify-content-around">
+          <ion-col>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid >
+        <ion-row>
+
+       
+        <ion-list>
+          <ion-item-sliding >
+            <ion-item lines="none" *ngFor="let item of items" >
+              <ion-thumbnail expand="block" >
+                <ion-img [src]="item.src"></ion-img>
+              </ion-thumbnail>
+              ion-label>{{item.text}}</ion-label> 
+            </ion-item>
+          </ion-item-sliding>
+        </ion-list>
+      </ion-row>
+      </ion-grid> -->
+
+      
+   
+</ion-content>
+
+
+

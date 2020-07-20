@@ -1,0 +1,57 @@
+
+ion-grid,
+ion-row {
+ height: 100%;
+ background: lightgray ;
+}
+
+// .header-background {
+//   background-color: var(--ion-color-orange);
+// }
+
+.login-header,
+.header-background {
+  // background-color: radial-gradient(lightgray, transparent);
+  background-color: var(--ion-color-light);
+  color: var(--ion-color-primary-contrast);
+}
+
+.login-header,
+.login-background {
+  background-color: var(--ion-color-light);
+  color: var(--ion-color-primary-contrast);
+}
+
+.text {
+  color:gray;
+  .small-text {
+    font-size: 10px;
+  }
+  .medium-text {
+    font-size: 18px;
+  }
+}
+
+.login-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+}
+
+.header-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0%;
+}
+
+.login-container {
+  // background-color: var(--ion-background-color);
+  .card-radius {
+    border-radius: 5%;
+    padding-right: 20px;
+  }
+}
