@@ -1,7 +1,7 @@
-import { Routes, Route } from '@angular/router';
+import { Routes, Route } from '@angular/router'
 
-import { AuthenticationGuard } from 'src/app/core';
-import { Shell } from './shell';
+import { AuthenticationGuard } from 'src/app/core'
+import { Shell } from './shell'
 
 /**
  * Provides helper methods to create routes.
@@ -17,9 +17,9 @@ export class ShellService {
       path: '',
       component: Shell,
       children: routes,
-      canActivate: [AuthenticationGuard],
+      // canActivate: [AuthenticationGuard],
       // Reuse ShellComponent instance when navigating between child views
-      data: { reuse: true }
-    };
+      data: { reuse: true },
+    }
   }
 }
